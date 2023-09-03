@@ -8,18 +8,18 @@
 
 
 // 2 - Write a PHP program which iterates the integers from 1 to 50. For multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz" 
-// $x = "Fizz";
-// $y = "Buzz";
-// for ($i = 1; $i <= 50; $i++) {
-//     if ($i % 3 == 0) {
-//         echo $x . "<br>";
-//     } else if ($i % 5 == 0) {
-//         echo $y . "<br>";
-//     } else if ($i % 3 == 0 || $i % 5 == 0) {
-//         echo $x . $y . "<br>";
-//     } else
-//         echo $i . "<br>";
-// }
+$x = "Fizz";
+$y = "Buzz";
+for ($i = 1; $i <= 50; $i++) {
+    if ($i % 3 == 0 && $i % 5 == 0) {
+        echo $x . $y . "<br>";
+    } elseif ($i % 3 == 0) {
+        echo $x . "<br>";
+    } else if ($i % 5 == 0) {
+        echo $y . "<br>";
+    } else
+        echo $i . "<br>";
+}
 
 // 3-Create a script using a for loop to add all the integers between 0 and 30 and display the total 
 // $totle = 0;
